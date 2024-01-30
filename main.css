@@ -1,10 +1,69 @@
-body{
-    width:100;
-    height:100;
+@font-face {
+    font-family: neueHaas;
+    src: url('/typography/NeueHaasDisplayXThin.ttf')  format('truetype');
+  }
+
+
+  @font-face {
+    font-family: timesNew;
+    src: url('/typography/Times\ New\ Roman.ttf')  format('truetype');
+  }
+  
+  html, body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
       
     }
 
-img{
-   height: 100;
-   width: 100;
+
+.maincontainer{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+
+h1{
+    text-align: center;
+    font-family: neueHaas;
+    font-weight: normal;    
+    font-size: 3em;
+    margin: 0;
+    letter-spacing: -.02em;
+}
+
+.contact{
+    margin-top: 120px;
+    text-align: center;
+    font-family: timesNew;
+    font-size: 14px;
+    letter-spacing: .02em;
+}
+
+#log img {
+    width: 100%;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#log{
+    width: 180px;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    color: black;
+
 }

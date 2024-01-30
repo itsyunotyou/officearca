@@ -1,15 +1,30 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="main.css"></link>
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css"></link>
+    <title>officearca</title>
+</head>
 <body>
+    <div class="maincontainer">
 
+        <div id="log"></div>
+        <h1>office arca</h1>
+
+
+        <div class="contact">
+            <span>architecture office - contact:</span> 
+            <a href="info@officearca.com">info@officearca.com</a>
+        </div>
+
+    </div>
+    <script>
+        
+        document.getElementById('log').innerHTML += "<img src = /home/" + Math.floor (1+ Math.random()*5)+".jpeg loading = lazy>";
+      
+    </script>
 
 </body>
 
-<script>
-    
-document.write("<img src = /home/" + Math.floor (1+ Math.random()*5)+".png>");
-  
-</script>
+
 </html>
