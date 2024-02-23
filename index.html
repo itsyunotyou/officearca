@@ -6,12 +6,6 @@
     <meta name="description" content="This is office arca.">
     <link rel="stylesheet" href="main.css"></link>
     <title>officearca</title>
-    <link rel="preload" fetchpriority="high" as="image" href="/home/1.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="/home/2.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="/home/3.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="/home/4.webp" type="image/webp">
-    <link rel="preload" fetchpriority="high" as="image" href="/home/5.webp" type="image/webp">
-    
     <script type="text/javascript">
         window.GUMLET_CONFIG = {
             hosts: [{
@@ -39,7 +33,7 @@
     </div>
     <script>
         
-        document.getElementById('log').innerHTML += "<picture> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".webp width=180 height=250> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250> <img  alt= flower data-src = /home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250 loading=eager></picture>";
+        document.getElementById('log').innerHTML += "<picture> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".webp width=180 height=250 fetchpriority=high> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250 fetchpriority=high> <img  alt= flower data-src = /home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250 fetchpriority=high loading=eager></picture>";
       
     </script>
 
