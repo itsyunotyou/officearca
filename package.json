@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.10"
+    "@cloudinary/url-gen": "^1.16.1",
+    "@vercel/speed-insights": "^1.0.10",
+    "cloudinary": "^2.0.1"
   }
 }
