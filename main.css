@@ -65,13 +65,13 @@ a{
     margin-top: 100px;
     text-align: center;
     font-family: neueHaas;
-    font-size: 15px;
+    font-size: 14px;
     letter-spacing: .02em;
 }
 
 @media (max-width: 600px) {
     .contact {
-        font-size: 9px;
+        font-size: 10px;
         font-family: neueHaas;
         letter-spacing: .02em;
     }
