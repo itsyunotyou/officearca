@@ -45,7 +45,7 @@ h1{
     text-align: center;
     font-family: neueHaas;
     font-weight: 50;    
-    font-size: 0.5em;
+    font-size: 0.7em;
     letter-spacing: 0.1em;
     text-decoration: none;
     padding: 0;
@@ -62,12 +62,21 @@ a{
 }
 
 .contact{
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
-    font-family: timesNew;
+    font-family: neueHaas;
     font-size: 15px;
     letter-spacing: .02em;
 }
+
+@media (max-width: 600px) {
+    .contact {
+        font-size: 0.15em;
+        font-family: neueHaas;
+        letter-spacing: .02em;
+    }
+}
+
 
 #log img {
     height: 100%;
