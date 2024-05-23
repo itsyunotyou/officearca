@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is office arca.">
-    <link rel="stylesheet" href="main.css"></link>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://gumlet.com">
     <link rel="preconnect" href="https://cdn.gumlet.com">
     <title>officearca</title>
@@ -18,28 +18,39 @@
         };
         (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
     </script>
+    <style>
+        .responsive-margin {
+            margin-top: 15vh; /* 5% of the viewport height */
+        }
 
+        @media (min-width: 600px) {
+            .responsive-margin {
+                margin-top: 15vh; /* 4% of the viewport height for wider screens */
+            }
+        }
+
+        @media (min-width: 900px) {
+            .responsive-margin {
+                margin-top: 11vh; /* 3% of the viewport height for even wider screens */
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="maincontainer">
+    <div class="maincontainer responsive-margin">
 
-        <div id="log" width="180px" height="250px"></div>
+        <div id="log"> </div>
         <h1>office arca</h1>
 
-
         <div class="contact">
-            <span>architecture office - contact:</span> 
-            <a href="mailto:info@officearca.com">info@officearca.com</a>
+            <div>Office Arca is a partnership in architecture and design focused on collaboration across disciplines.</div>
+            <div>Studio 206, Platform Studios East, Morning Lane, London, E9 6ND | <a href="mailto:info@officearca.com">info@officearca.com</a> | <a href="https://www.instagram.com/officearca/">@officearca</a></div>
+            <div>©Office Arca,2024.</div>
         </div>
 
     </div>
     <script>
-
-        document.getElementById('log').innerHTML += "<picture> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".webp width=180 height=250 fetchpriority=high> <source srcset=/home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250 fetchpriority=high> <img  alt= flower data-src = /home/" + Math.floor (1+ Math.random()*5)+".jpeg width=180 height=250 fetchpriority=high loading=eager></picture>";
-      
+        document.getElementById('log').innerHTML += "<picture> <source srcset='/home/" + Math.floor(1 + Math.random() * 5) + ".webp' width='180' height='250' fetchpriority='high'> <source srcset='/home/" + Math.floor(1 + Math.random() * 5) + ".jpeg' width='180' height='250' fetchpriority='high'> <img alt='flower' data-src='/home/" + Math.floor(1 + Math.random() * 5) + ".jpeg' width='180' height='250' fetchpriority='high' loading='eager'></picture>";
     </script>
-
 </body>
-
-
 </html>
