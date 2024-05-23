@@ -16,7 +16,7 @@
             }],
             lazy_load: true
         };
-        (function(){d=document;s=d.createElement("script");s.src="https://cdn.gumlet.com/gumlet.js/2.1/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+        (function(){d=document;s=d.createElement("script");s.src="https://cdn.jsdelivr.net/npm/gumlet.js@2.2/dist/gumlet.min.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
     </script>
     <style>
         .responsive-margin {
@@ -50,7 +50,7 @@
 
     </div>
     <script>
-        document.getElementById('log').innerHTML += "<picture> <source srcset='/home/" + Math.floor(1 + Math.random() * 10) + ".webp' width='180' height='250' fetchpriority='high'> <source srcset='/home/" + Math.floor(1 + Math.random() * 10) + ".jpeg' width='180' height='250' fetchpriority='high'> <img alt='flower' data-src='/home/" + Math.floor(1 + Math.random() * 10) + ".jpeg' width='180' height='250' fetchpriority='high' loading='eager'></picture>";
+        document.getElementById('log').innerHTML += "<picture><source srcset='/home/" + Math.floor(1 + Math.random() * 10) + ".jpeg' width='180' height='250' fetchpriority='high'> <img alt='flower' data-src='/home/" + Math.floor(1 + Math.random() * 10) + ".jpeg' width='180' height='250' fetchpriority='high' loading='eager'></picture>";
     </script>
 </body>
 </html>
