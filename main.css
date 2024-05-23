@@ -71,6 +71,7 @@ a{
 
 @media (max-width: 600px) {
     .contact {
+        margin-top: 60px;
         font-size: 10px;
         font-family: neueHaas;
         letter-spacing: .02em;
